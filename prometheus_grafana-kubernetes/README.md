@@ -196,6 +196,7 @@ fakeshop                              LoadBalancer   10.96.123.143    <pending> 
 ```
 
 - Depois de ter entrado na url da aplicação/metrics. Pegue o nome da métrica **flask_http_request_duration_seconds_sum** e coloque em graph para ver as metricas coletadas.
+- Documentação sobre as query do prometheus: https://prometheus.io/docs/prometheus/latest/querying/basics/
 - Agora, com as métricas sendo coletada da aplicação, é interessante criar uma dashboard de gráficos com o Grafana.
 
 # Dashboard - Grafana
