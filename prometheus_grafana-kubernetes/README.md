@@ -81,7 +81,7 @@ PromQL, é uma linguagem do prometheus utilizada para coletar as metricas. As m�
 
 Na dashboard do prometheus, na aba table, cole o nome **prometheus_http_requests_total** na barra de pesquisa das metricas para verificar todas as métricas com este nome. 
 
-Cada informação mostrada na tela, é um instante Vector, cada métrica mostrada são métricas capturada em **tempo real**. Como é em tempo real, consegue verificar as métricas de segundos, minutos e horas atrás clicando no campo **Evaluation time**. É possível observar essas métricas em tempo real, basta clicar apenas em **Graph**
+Cada informação mostrada na tela, é um instant Vector, cada métrica mostrada são métricas capturada em **tempo real**. Como é em tempo real, consegue verificar as métricas de segundos, minutos e horas atrás clicando no campo **Evaluation time**. É possível observar essas métricas em tempo real, basta clicar apenas em **Graph**
 
 - Pegando uma métrica, um caminho específico atráves de labels.
 
@@ -120,7 +120,7 @@ prometheus_http_requests_total{handler!~"/metrics|/api/v1/labels"} # clique em e
 ```
 
 
-### Pegando uma métrica de um determinado período.
+### Pegando uma métrica de um determinado período. ( Range Vector)
 - Neste exemplo, vai ser uma métrica do momento atual até 10 minutos atrás
 ```bash
 prometheus_http_requests_total{handler="/metrics"}[10m] # clique em execute
